@@ -1,0 +1,43 @@
+html{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+main{
+    display: flex;
+}
+
+.contentarios, .formulario{
+    width: 50vw;
+    height: 100vp;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.comentarios{
+    background-color: #d9d9d9;
+}
+
+.formulario{
+    width: 300px;
+}
+
+.comenterios__titulo{
+    color:#A09A9A;
+    font-size: 85px;
+    font-weight: 300;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+
+}
+
