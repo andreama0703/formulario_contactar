@@ -44,7 +44,7 @@
 </header>
 <!-- MAIN, zona central diferente en todos los HTML, es el contenido diferenciador de las páginas -->
 <main> 
-    <section class="comentarios">
+    <section class="comentario">
         <h1 class="comenterios__titulo">COMENTARIOS ></h1>
     </section>
     <section class="formulario">
@@ -58,16 +58,20 @@
                         name="nombre" 
                         required 
                         placeholder="intruduce tu nombre" 
-                        id="nombre">
+                        id="nombre"
+                        maxlength="20"
+                        autofocus
+                        pattern="[a-zA-Z]{2,20}">    
                 </li>
                 <li>
                     <!-- apellidos -->
-                    <label for="apellido">Apellido</label>
-                    <input class="formularioContacto__apellido" 
+                    <label for="apellidos">Apellidos</label>
+                    <input class="formularioContacto__apellidos" 
                         type="text" 
-                        name="apellido" 
-                        placeholder="intruduce tu apellido" 
-                        id="nombre">
+                        name="apellidos" 
+                        placeholder="intruduce tus apellidos" 
+                        id="apellidos"
+                        pattern="[a-zA-Z]{2,25}">   
                 </li>
                 <li>
                     <!-- email -->
@@ -75,7 +79,8 @@
                     <input class="formularioContacto__email" 
                         type="email" name="email" 
                         required placeholder="intruduce tu email personal" 
-                        id="nombre">
+                        id="nombre"
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,6}">
                 </li>
                 <li>
                     <!-- comentarios -->
@@ -89,7 +94,7 @@
                         rows="10">
                     </textarea>
                 </li>
-                <li>
+                <li class="checkbox">
                     <input type="checkbox">
                     <span>Utilizar mi email para enviar publicidad</span>
                 </li>

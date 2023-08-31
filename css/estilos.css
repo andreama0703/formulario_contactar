@@ -7,7 +7,7 @@ main{
     display: flex;
 }
 
-.contentarios, .formulario{
+.comentario, .formulario{
     width: 50vw;
     height: 100vp;
     display: flex;
@@ -15,14 +15,9 @@ main{
     align-items: center; 
 }
 
-.comentarios{
+.comentario{
     background-color: #d9d9d9;
 }
-
-.formulario{
-    width: 300px;
-}
-
 .comenterios__titulo{
     color:#A09A9A;
     font-size: 85px;
@@ -38,6 +33,17 @@ ul{
 li{
     display: flex;
     flex-direction: column;
+}
 
+input{
+    padding: 8px;
+}
+
+.boton{
+    padding: 8px;
+}
+
+.checkbox{
+    flex-direction: row;
 }
 
