@@ -45,7 +45,73 @@
 <!-- MAIN, zona central diferente en todos los HTML, es el contenido diferenciador de las páginas -->
 <main> 
     <section class="comentario">
-        <h1 class="comenterios__titulo">COMENTARIOS ></h1>
+        <h1 class="comenterios__titulo">REGISTRARSE</h1>
+        <h5 class="comenterios__subtitulo">Nuevo usuario</h5>
+        <form class="formularioContacto" action=""> 
+            <ul>
+                <li>
+                    <!-- nombre -->
+                    <label for="nombre">Nombre*</label>
+                    <input class="formularioContacto__nombre" 
+                        type="text" 
+                        name="nombre" 
+                        required 
+                        placeholder="intruduce tu nombre" 
+                        id="nombre"
+                        maxlength="20"
+                        autofocus
+                        pattern="[a-zA-Z]{2,20}">    
+                </li>
+                <li>
+                    <!-- apellidos -->
+                    <label for="apellidos">Apellidos</label>
+                    <input class="formularioContacto__apellidos" 
+                        type="text" 
+                        name="apellidos" 
+                        placeholder="intruduce tus apellidos" 
+                        id="apellidos"
+                        pattern="[a-zA-Z]{2,25}">   
+                </li>
+                <li>
+                    <!-- email -->
+                    <label for="nombre">Email*</label>
+                    <input class="formularioContacto__email" 
+                        type="email" 
+                        name="email" 
+                        required placeholder="intruduce tu email personal" 
+                        id="nombre"
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,6}">
+                </li>
+                <li>
+                    <!-- contraseña -->
+                    <label for="contrasenia">Contraseña</label>
+                    <input class="formularioContacto__contrasenia" 
+                        type="text" 
+                        name="contrasenia" 
+                        required placeholder="con mayusculas, numeros y simbolos" 
+                        id="contrasenia"
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,6}">
+                </li>
+                <li>
+                    <!-- verificar contraseña -->
+                    <label for="verifcontrasenia">Verifica tu contraseña</label>
+                    <input class="formularioContacto__verifcontrasenia" 
+                        type="text" 
+                        name="verifcontrasenia" 
+                        required placeholder="repite la misma de arriba" 
+                        id="verifcontrasenia"
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,6}">
+                </li>
+                <li class="checkbox">
+                    <input type="checkbox">
+                    <span>Utilizar mi email para enviar publicidad</span>
+                </li>
+                <li>
+                    <button class="boton" type="reset">Borrar</button>
+                    <button class="boton" type="submit">Enviar</button>  
+                </li>
+            </ul>
+        </form>
     </section>
     <section class="formulario">
         <form class="formularioContacto" action=""> 
@@ -77,22 +143,21 @@
                     <!-- email -->
                     <label for="nombre">Email*</label>
                     <input class="formularioContacto__email" 
-                        type="email" name="email" 
+                        type="email" 
+                        name="email" 
                         required placeholder="intruduce tu email personal" 
                         id="nombre"
                         pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,6}">
                 </li>
                 <li>
-                    <!-- comentarios -->
-                    <label for="comentario">Comentarios</label>
-                    <textarea class="formularioContacto__comentario"
-                        name="comentario" 
-                        placeholder="deja aquí tus comentarios"
-                        required
-                        id="comentario" 
-                        cols="30" 
-                        rows="10">
-                    </textarea>
+                    <!-- contraseña -->
+                    <label for="contraseña">Contraseña</label>
+                    <input class="formularioContacto__contrasenia" 
+                        type="text" 
+                        name="contrasenia" 
+                        required placeholder="con mayusculas, numeros y simbolos" 
+                        id="contrasenia"
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,6}">
                 </li>
                 <li class="checkbox">
                     <input type="checkbox">
