@@ -1,0 +1,113 @@
+  
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<meta name="robots" content="index, follow" />
+<meta name="format-detection" content="telephone=no, email=no" />
+
+<!-- Etiqueta para favicon -->
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+<!-- SEO para el buscador de Google -->
+<title>Contactar</title>
+<meta name="description" content="Descripción de tu página" />
+
+<!-- Etiquetas Open Graph y Twitter Card, para crear el SEO de Redes Sociales -->
+<meta property="og:title" content="Título de tu página" />
+<meta property="og:description" content="Descripción de tu página" />
+<meta
+    property="og:image"
+    content="URL de la imagen que quieres mostrar en las redes sociales"
+/>
+<meta property="og:url" content="URL de tu página" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Título de tu página" />
+<meta name="twitter:description" content="Descripción de tu página" />
+<meta
+    name="twitter:image"
+    content="URL de la imagen que quieres mostrar en Twitter"
+/>
+
+<!-- Código de las plataformas de Análisis -->
+<script></script>
+
+<!-- Estilos CSS -->
+<link rel="stylesheet" href="css/normalize.css" />
+<link rel="stylesheet" href="css/estilos.css" />
+
+<!-- Scripts a cargar antes de la renderización -->
+<script src="preloader.js"></script>
+</head>
+<body>
+<!-- HEADER, zona superior que se repite en todos los HTML -->
+<header>
+
+</header>
+<!-- MAIN, zona central diferente en todos los HTML, es el contenido diferenciador de las páginas -->
+<main> 
+    <section class="comentario">
+        <h1 class="comenterios__titulo">COMENTARIOS ></h1>
+    </section>
+    <section class="formulario">
+        <form class="formularioContacto" action=""> 
+            <ul>
+                <li>
+                    <!-- nombre -->
+                    <label for="nombre">Nombre*</label>
+                    <input class="formularioContacto__nombre" 
+                        type="text" 
+                        name="nombre" 
+                        required 
+                        placeholder="intruduce tu nombre" 
+                        id="nombre"
+                        maxlength="20"
+                        autofocus
+                        pattern="[a-zA-Z]{2,20}">    
+                </li>
+                <li>
+                    <!-- apellidos -->
+                    <label for="apellidos">Apellidos</label>
+                    <input class="formularioContacto__apellidos" 
+                        type="text" 
+                        name="apellidos" 
+                        placeholder="intruduce tus apellidos" 
+                        id="apellidos"
+                        pattern="[a-zA-Z]{2,25}">   
+                </li>
+                <li>
+                    <!-- email -->
+                    <label for="nombre">Email*</label>
+                    <input class="formularioContacto__email" 
+                        type="email" name="email" 
+                        required placeholder="intruduce tu email personal" 
+                        id="nombre"
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,6}">
+                </li>
+                <li>
+                    <!-- comentarios -->
+                    <label for="comentario">Comentarios</label>
+                    <textarea class="formularioContacto__comentario"
+                        name="comentario" 
+                        placeholder="deja aquí tus comentarios"
+                        required
+                        id="comentario" 
+                        cols="30" 
+                        rows="10">
+                    </textarea>
+                </li>
+                <li class="checkbox">
+                    <input type="checkbox">
+                    <span>Utilizar mi email para enviar publicidad</span>
+                </li>
+                <li>
+                    <button class="boton" type="reset">Borrar</button>
+                    <button class="boton" type="submit">Enviar</button>  
+                </li>
+            </ul>
+        </form>
+    </section>
+</main>
+<!-- FOOTER, zona inferior que se repite en todos los HTML -->
+<footer>
+
+</footer>
+</body>
