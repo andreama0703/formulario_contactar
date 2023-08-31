@@ -18,7 +18,7 @@ main{
 .comentario{
     background-color: #d9d9d9;
 }
-.comenterios__titulo{
+.comentario__titulo .formulario__titulo{
     color:#A09A9A;
     font-size: 85px;
     font-weight: 300;

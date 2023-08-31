@@ -45,10 +45,13 @@
 <!-- MAIN, zona central diferente en todos los HTML, es el contenido diferenciador de las páginas -->
 <main> 
     <section class="comentario">
-        <h1 class="comenterios__titulo">REGISTRARSE</h1>
-        <h5 class="comenterios__subtitulo">Nuevo usuario</h5>
-        <form class="formularioContacto" action=""> 
+        <form class="formularioComentario" action=""> 
             <ul>
+                <li>
+                    <!-- titulos -->
+                    <h1 class="comentario__titulo">REGISTRARSE</h1>
+                    <h5 class="comentario__subtitulo">Nuevo usuario</h5>
+                </li>
                 <li>
                     <!-- nombre -->
                     <label for="nombre">Nombre*</label>
@@ -117,27 +120,9 @@
         <form class="formularioContacto" action=""> 
             <ul>
                 <li>
-                    <!-- nombre -->
-                    <label for="nombre">Nombre*</label>
-                    <input class="formularioContacto__nombre" 
-                        type="text" 
-                        name="nombre" 
-                        required 
-                        placeholder="intruduce tu nombre" 
-                        id="nombre"
-                        maxlength="20"
-                        autofocus
-                        pattern="[a-zA-Z]{2,20}">    
-                </li>
-                <li>
-                    <!-- apellidos -->
-                    <label for="apellidos">Apellidos</label>
-                    <input class="formularioContacto__apellidos" 
-                        type="text" 
-                        name="apellidos" 
-                        placeholder="intruduce tus apellidos" 
-                        id="apellidos"
-                        pattern="[a-zA-Z]{2,25}">   
+                <!-- titulos -->
+                    <h1 class="formualario__titulo">INICIO</h1>
+                    <h5 class="formualario__subtitulo">Nuevo usuario</h5>
                 </li>
                 <li>
                     <!-- email -->
@@ -159,12 +144,7 @@
                         id="contrasenia"
                         pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,6}">
                 </li>
-                <li class="checkbox">
-                    <input type="checkbox">
-                    <span>Utilizar mi email para enviar publicidad</span>
-                </li>
                 <li>
-                    <button class="boton" type="reset">Borrar</button>
                     <button class="boton" type="submit">Enviar</button>  
                 </li>
             </ul>
