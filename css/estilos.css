@@ -47,3 +47,114 @@ input{
     flex-direction: row;
 }
 
+/* INICIO */
+html{
+    font-size: 16px;
+    font-family: sans-serif;
+    
+}
+
+/* MAIN */
+main{
+    display: flex;
+}
+
+.seccion1, .seccion2{
+    box-sizing: border-box;
+    width: 50vw;
+    height: 100vh;
+    padding: 3% 0;
+    /* centrar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion1:hover + .seccion2{
+    filter: blur(5px);
+}
+
+h4,h5{
+    margin: 0;
+}
+
+/* SECCIÓN 1 */
+.seccion1{
+    background-color: #e8e8e8;
+    
+}
+
+.seccion1__comentarios{
+    font-size: 85px;
+    font-weight: 300;
+    color: gray;
+}
+
+.seccion1__nuevo{
+    font-size: 30px;
+    font-weight: 400;
+    color: gray;
+}
+
+/* SECCIÓN 2 */
+.seccion2{
+    background-color: #fcfcfc;
+}
+
+/* FORMULARIO */
+form{
+    width: 60%;
+}
+
+input,textarea,button{
+    padding: 10px;
+    border:0;
+    border-radius: 5px;
+}
+
+input:focus{
+    outline: 1px solid rgb(34, 0, 255);
+}
+
+ul{
+    /* separar y girar todos los li */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+}
+.seccion2 form{
+    flex-grow: 0.5;
+}
+
+::placeholder{
+    color: rgb(166, 166, 166);
+}
+
+/* BOTONES ESTILOS */
+
+button{
+    background-color: rgb(57, 57, 57);
+    color: white;
+    margin: 5px;
+}
+
+/* cuando pasas por encima el cursor */
+button:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+/* cuando haces la acción, ocurre muy rápido */
+button:focus{
+
+}
+/* cuando das clic */
+button:active{
+    background-color: rgb(170, 170, 170);
+
+}
